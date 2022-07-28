@@ -223,19 +223,175 @@
         <!------------------Courses part end------------->
 
         <!------------------Regitration part Start------------->
-        <section class="container bg-primary mt-5">
-            <div class="row gx-5">
-                <div class="col">
-                    <h3>Ready To Join?</h3>
-                    <p></p>
-                </div>
-                <div class="col">
-                    <div class="p-3 border bg-light">Custom column padding</div>
+
+        <section class="container  mt-5 rounded">
+            <div class="card mb-3 bg-primary">
+                <div class="row g-0">
+
+                    <div class="col-md-12 col-lg-8">
+                        <div class="card-body m-5">
+                            <h3 class="card-title text-white fw-bold">Ready To Join?</h3>
+                            <p class="card-text text-white">If you wnat to join with us you have to register
+                                first.Please give all
+                                valid information to join.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="d-grid col-md-12 col-lg-4 m-auto d-md-flex justify-content-center">
+                        <button type="button" class="btn bg-white text-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Register
+                            Now</button>
+                    </div>
+                    <!--Modal part start-->
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Pls, Fill Up the form</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="floatingInput"
+                                            placeholder="name@example.com">
+                                        <label for="floatingInput">Email address</label>
+                                    </div>
+                                    <div class="form-floating">
+                                        <input type="password" class="form-control" id="floatingPassword"
+                                            placeholder="Password">
+                                        <label for="floatingPassword">Password</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <h6>Gender :</h6>
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Male
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Female
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Modal part end-->
                 </div>
             </div>
 
         </section>
+
         <!------------------Regitration part end------------->
+
+        <!------------------Question part start------------->
+        <section class="container mt-5">
+            <div class="text-center mb-5">
+                <h1>Frequently Asked Question</h1>
+                <p>A person have many question when they want to start a new journey<br> with us.Here we tried to
+                    clarify
+                    some question</p>
+
+            </div>
+            <!--------Accordian part ------->
+            <div class="accordion accordion-flush w-75 m-auto" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header fw-bold" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            1. What are the difference between FlexBox and Grid?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"><strong>1.</strong>Grid is made for two-dimensional layout while
+                            Flexbox is for one.
+                            This means Flexbox can work on either row or columns at a time, but Grids can work on
+                            both.<br><strong>2.</strong> Direction allows developers to align elements vertically or
+                            horizontally,
+                            which is used when developers create and reverse rows or columns.
+                            CSS Grid deploys fractional measure units for grid fluidity and auto-keyword functionality
+                            to automatically adjust columns or rows.<br><strong>3.</strong> Flexbox layout is best
+                            suited to
+                            application components and small-scale layouts, while the Grid layout is designed for
+                            larger-scale layouts that are not linear in design.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            2. What are the differences between Bootstrap and Tailwind?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"><strong>1.</strong>Tailwind offers predesigned widgets to build a
+                            site from scratch with fast UI development. Bootstrap comes with a set of pre-styled
+                            responsive, mobile-first components that possess a definite UI
+                            kit.<br><strong>2.</strong>Tailwind CSS uses a set of utility classes to create a neat UI
+                            with more flexibility and uniqueness. Sites created using Bootstrap follow the generic
+                            pattern that makes them look identical.<br><strong>3.</strong>Websites created using
+                            Tailwind CSS are much more customizable. Websites created with Bootstraps are known for
+                            their responsiveness and flawless design, but the looks are generic and similar.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            3. What is CSS Box model?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"><strong>The CSS box model</strong> is a container that contains
+                            multiple properties including borders, margin, padding, and the content itself. It is used
+                            to create the design and layout of web pages. It can be used as a toolkit for customizing
+                            the layout of different elements. The web browser renders every element as a rectangular box
+                            according to the CSS box model. Box-Model has multiple properties in CSS</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            4. What is Semantic tag ?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">The HTML semantics refers to the tags that provide meaning to an
+                            HTML page rather than just presentation. It makes HTML more comprehensible by better
+                            defining the different sections and layout of web pages.<br><strong>The are several
+                                advantages of using semantics tags in HTML:</strong><br>1.The semantic HTML tags help
+                            the search engines and other user devices to determine the importance and context of web
+                            pages.<br>2.The pages made with semantic elements are much easier to read.<br>3.It has
+                            greater accessibility. It offers a better user experience.
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!------------------question part end------------->
+
+        <!-------------------Trusted section start--------->
+
+        <!-------------------Trusted section end--------->
 
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
